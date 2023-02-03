@@ -1,0 +1,26 @@
+.contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+section.galeria{
+    background-color: black;
+    display: flex;
+    width: 900px;
+    height: 430px;
+}
+section.galeria img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: 0.9s ease;
+    filter: blur(3px);
+}
+section.galeria img:hover{
+   cursor: crosshair;
+   width: 600px;
+   opacity: 1;
+   filter: contrast(120%);
+   filter: blur(0);
+}
